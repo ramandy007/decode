@@ -1,0 +1,8 @@
+#!/bin/python3
+
+import base64
+token ='eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJQYXJhZG94IiwiaWF0IjoxNjM1NDk4Mjk1LCJleHAiOjE2MzU0OTg0MTUsImRhdGEiOnsicGluZ3UiOiJub290cyJ9fQ.a6-HYV9OEGrAltijmaDKa6hdz0wbQMBeqTnhKjjy82m73IZCq6sawE0KjQnzd9OcojdOVEtwQmPccS1xj1Lp-R1ykNkVjnpMvXoTjQ10uydA5Lb8E4DVgKOA46Fk6uYT4fmPJ_YfcnqVgfrk0aE46uawsIUkKKBYO10rELl5FutxXkweSM6_9wObrnRSmVswTJG7QOseAGu2OAfQa8DfOBVhTiwu1JB2fmkwd67DbZSqaShQyArX33ktjn-WJxfTEEh3WVNUfLHBttALoBnVG42b37H6bzq9eXdBU6nCcM9-WPNcnEgIP-3AAAD9LBEbykF6Wk9jeGxv5B4XZeSMyA'
+token = token+'='* (len(token)%4);
+print('{}'.format(base64.urlsafe_b64decode(token)))
+
+
